@@ -69,6 +69,47 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-端口修改" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2024/08/22/%E7%AB%AF%E5%8F%A3%E4%BF%AE%E6%94%B9/" class="article-date">
+  <time class="dt-published" datetime="2024-08-22T08:10:10.000Z" itemprop="datePublished">2024-08-22</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2024/08/22/%E7%AB%AF%E5%8F%A3%E4%BF%AE%E6%94%B9/">端口修改</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sudo</span> vim /etc/ssh/sshd_config</span><br></pre></td></tr></table></figure>
+<p>在打开的sshd_config文件中，找到#Port 22这一行（注意，这一行可能已经被注释掉了）。将#去掉，并将22更改为你想要的新端口号，比如2222。修改后的行应该看起来像这样：<br>Port 2222<br>如果你使用的是vim编辑器，按下Esc键，然后输入:wq并按Enter键来保存更改并退出。如果你使用的是nano编辑器，按下Ctrl + X，然后按Y确认保存更改，最后按Enter键退出。<br>在Ubuntu 24.04中，你可能需要使用systemctl命令来重启SSH服务，因为传统的service命令在某些情况下可能不再适用。执行以下命令来重启SSH服务：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sudo</span> systemctl restart ssh.socket</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2024/08/22/%E7%AB%AF%E5%8F%A3%E4%BF%AE%E6%94%B9/" data-id="cm0508rlo0000w8k90udp86rz" data-title="端口修改" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-HUSTOJ安装教程" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2024/08/21/HUSTOJ%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/" class="article-date">
@@ -394,6 +435,10 @@ int main()&#123;
       <ul>
         
           <li>
+            <a href="/2024/08/22/%E7%AB%AF%E5%8F%A3%E4%BF%AE%E6%94%B9/">端口修改</a>
+          </li>
+        
+          <li>
             <a href="/2024/08/21/HUSTOJ%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/">HUSTOJ安装教程</a>
           </li>
         
@@ -407,10 +452,6 @@ int main()&#123;
         
           <li>
             <a href="/2024/08/20/OJ%E4%BD%BF%E7%94%A8%E8%A7%84%E5%88%99/">OJ使用规则</a>
-          </li>
-        
-          <li>
-            <a href="/2024/08/20/%E6%88%91%E7%9A%84%E7%BD%91%E7%AB%99/">我的网站</a>
           </li>
         
       </ul>
