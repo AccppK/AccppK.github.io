@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>在Mac上安装hexo | Accpp_K的博客</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="搭建环境，部署本地的 Hexo 博客打开 Mac 自带的 终端 使用 command+P，输入关键词 终端 然后回车打开请注意，后面步骤中的代码都需要你复制下来，然后直接粘贴到终端里，然后回车安装 Homebrew 1&#x2F;bin&#x2F;bash -c &quot;$(curl -fsSL https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;Homebrew&#x2F;install&#x2F;HEAD&#x2F;ins">
+<meta property="og:type" content="article">
+<meta property="og:title" content="在Mac上安装hexo">
+<meta property="og:url" content="http://example.com/2024/08/22/%E5%9C%A8Mac%E4%B8%8A%E5%AE%89%E8%A3%85hexo/index.html">
+<meta property="og:site_name" content="Accpp_K的博客">
+<meta property="og:description" content="搭建环境，部署本地的 Hexo 博客打开 Mac 自带的 终端 使用 command+P，输入关键词 终端 然后回车打开请注意，后面步骤中的代码都需要你复制下来，然后直接粘贴到终端里，然后回车安装 Homebrew 1&#x2F;bin&#x2F;bash -c &quot;$(curl -fsSL https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;Homebrew&#x2F;install&#x2F;HEAD&#x2F;ins">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2024-08-22T08:57:16.000Z">
+<meta property="article:modified_time" content="2024-08-22T09:02:13.657Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Accpp_K的博客" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Accpp_K的博客</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+        
+          <a class="nav-icon" href="/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
+        
+        <a class="nav-icon nav-search-btn" title="Search"><span class="fa fa-search"></span></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-在Mac上安装hexo" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2024/08/22/%E5%9C%A8Mac%E4%B8%8A%E5%AE%89%E8%A3%85hexo/" class="article-date">
+  <time class="dt-published" datetime="2024-08-22T08:57:16.000Z" itemprop="datePublished">2024-08-22</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      在Mac上安装hexo
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="搭建环境，部署本地的-Hexo-博客"><a href="#搭建环境，部署本地的-Hexo-博客" class="headerlink" title="搭建环境，部署本地的 Hexo 博客"></a>搭建环境，部署本地的 Hexo 博客</h1><p>打开 Mac 自带的 终端</p>
+<p>使用 command+P，输入关键词 终端 然后回车打开<br>请注意，后面步骤中的代码都需要你复制下来，然后直接粘贴到终端里，然后回车<br>安装 Homebrew</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/bin/bash -c <span class="string">&quot;<span class="subst">$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)</span>&quot;</span></span><br></pre></td></tr></table></figure>
+<p>请注意，Homebrew 的安装有可能失败，如果遇到此类情况请先自行搜索解决办法，本文会在未来补充相关教学。</p>
+<p>安装 Node.js</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install node</span><br></pre></td></tr></table></figure>
+<p>安装 Git</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install git</span><br></pre></td></tr></table></figure>
+<p>安装hexo</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
+<p>在 Mac 中新建一个用于存放文章的文件夹，命名为 Hexo</p>
+<p>进入这个文件夹内，然后右键空白处，点击「显示简介」</p>
+<p>在弹出的菜单中，找到文件夹的地址，然后复制这段地址.<br>在这段地址的最后加上 Hexo 这几个字，获得完整的文件夹地址，例如 &#x2F;Users&#x2F;NAS-Home&#x2F;Document&#x2F;Hexo<br>回到终端界面，输入下面这段代码，然后回车。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> /Users/NAS-Home/Document/Hexo</span><br></pre></td></tr></table></figure>
+<p>请注意，你需要将上面代码中的地址替换为你在步骤 9 中获得的文件夹地址，并且不要漏掉 cd 后面的空格</p>
+<p>输入下面代码，下载 Hexo</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init</span><br></pre></td></tr></table></figure>
+<p>输入下面代码，启动 Hexo</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+<p>复制这串地址，然后在浏览器打开，就可以看到你的 Hexo 博客成功安装在本地了</p>
+<h1 id="本地文章发布测试"><a href="#本地文章发布测试" class="headerlink" title="本地文章发布测试"></a>本地文章发布测试</h1><p>虽然我们的最终目标是要将文章发布到网上，才能让别人看到，不过我们先来测试一下文章在本地发布的效果，在这个过程中你也可以熟悉一下与 Hexo 相关的一些命令或注意事项。</p>
+<p>注意： 所有与 Hexo 相关的命令，都需要你通过终端的 CD 命令进入到 Hexo 文件夹内容，然后再执行。这个命令你可以在第一大点的步骤 10 中找到</p>
+<p>准备一篇写好的 Markdown 文章<br>在这篇文章的最开头加上以下代码</p>
+<figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line"><span class="section">title: 你拟定的标题</span></span><br><span class="line"><span class="section">---</span></span><br></pre></td></tr></table></figure>
+<p>请注意，你必须按照这个格式，否则 Hexo 将无法识别你的文章</p>
+<p>导出这篇文章的 Markdown 文件<br>将这个文件放到 Hexo 文件夹中的 Source - posts 子文件夹中<br>输入</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+<p>这个命令能让你在本地启动服务器以预览博客，然后你就能再次看到一串网址</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2024/08/22/%E5%9C%A8Mac%E4%B8%8A%E5%AE%89%E8%A3%85hexo/" data-id="cm0521ji900004ok9ejizd5y6" data-title="在Mac上安装hexo" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2024/08/22/%E7%AB%AF%E5%8F%A3%E4%BF%AE%E6%94%B9/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">端口修改</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/08/">August 2024</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2024/08/22/%E5%9C%A8Mac%E4%B8%8A%E5%AE%89%E8%A3%85hexo/">在Mac上安装hexo</a>
+          </li>
+        
+          <li>
+            <a href="/2024/08/22/%E7%AB%AF%E5%8F%A3%E4%BF%AE%E6%94%B9/">端口修改</a>
+          </li>
+        
+          <li>
+            <a href="/2024/08/21/HUSTOJ%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/">HUSTOJ安装教程</a>
+          </li>
+        
+          <li>
+            <a href="/2024/08/21/bu123-my-hustoj-com%E6%9D%83%E9%99%90%E4%BA%89%E9%9C%B8%E8%B5%9B/">bu123.my.hustoj.com权限争霸赛</a>
+          </li>
+        
+          <li>
+            <a href="/2024/08/21/%E6%96%87%E7%AB%A0%E6%B5%8B%E8%AF%95/">文章测试</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2024 John Doe<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.6.4.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>
